@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background:
+      radial-gradient(at 20% 20%, #dbeafe 0%, transparent 45%),
+      radial-gradient(at 80% 30%, #fde2e4 0%, transparent 45%),
+      radial-gradient(at 50% 80%, #ccfbf1 0%, transparent 45%),
+      #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* Main Card */
+.container {
+    background: #ffffff;
+    width: 380px;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1f2933;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+/* Add Button */
+button {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Habit List */
+ul {
+    list-style: none;
+    margin-top: 18px;
+}
+
+/* Habit Item */
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8fafc;
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Habit Text */
+li span {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Completed Habit */
+.completed {
+    text-decoration: line-through;
+    color: #6b7280;
+}
+
+/* Action Buttons */
+li button {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+li button:hover {
+    transform: scale(1.2);
+}
